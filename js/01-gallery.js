@@ -34,7 +34,7 @@ function onImageClick(evt) {
   instance = basicLightbox.create(
     `<img src="${evt.target.dataset.source}" alt="${evt.target.alt}" width="800" height="600">`,
     {
-      closable: false,
+      // closable: false,
       onShow: () => {
         bodyRef.style.overflow = "hidden";
         bodyRef.addEventListener("keydown", onEscapeClick);
